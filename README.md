@@ -3,16 +3,16 @@ GitHub repository for sharing DeltaCash-Technologies Project code
 
 deltacash server command:
 
-CREATE ACCOUNT
+CREATE ACCOUNT =
 curl -X POST http://localhost:3000/create
 
-CHECK BALANCE
+CHECK BALANCE =
 curl http://localhost:3000/balance/DELTACASH_ADDRESS
 
-SEND DELTACASH 
+SEND DELTACASH =
 curl -X POST http://localhost:3000/send \
 -H "Content-Type: application/json" \
 -d '{"from":"DELTACASH_ADDRESS","to":"DELTACASH_ADDRESS","amount":ENTER_AMOUNT}'
 
-CHECKING BLOCKCHAIN
+CHECKING BLOCKCHAIN =
 curl http://localhost:3000/chain
